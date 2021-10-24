@@ -21,13 +21,14 @@
 
 html {
     font-size: 62.5%;
+    background-color: var(--very-dark-blue);
 }
 
 main {
     background-color: var(--very-dark-blue);
     min-width: 375px;
     width: 100%;
-    height: 95vh;
+    height: 100%;
     padding: 60px 30px;
     display: flex;
     justify-content: center;
@@ -121,11 +122,13 @@ main {
 }
 
 .attribution {
+    min-width: 375px;
     width: 100%;
-    height: 5vh;
+    height: auto;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     background-color: var(--very-dark-blue);
 }
 

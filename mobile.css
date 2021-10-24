@@ -27,7 +27,7 @@ main {
     background-color: var(--very-dark-blue);
     min-width: 375px;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     padding: 60px 30px;
     display: flex;
     justify-content: center;
@@ -118,4 +118,25 @@ main {
     font-size: 1rem;
     font-weight: 400;
     color: var(--transparent-white-2);
+}
+
+.attribution {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    background-color: var(--very-dark-blue);
+}
+
+.attribution p {
+    font-family: sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%)
 }

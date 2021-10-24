@@ -4,6 +4,7 @@
     --very-dark-blue: hsl(233, 47%, 7%);
     --dark-desaturate-blue: hsl(244, 38%, 16%);
     --soft-violet: hsl(277,64%,61%);
+    --soft-violet-transparent: hsl(277,64%,61%, 0.6);
 
     /*NEUTRAL COLORS*/
     --white: hsl(0, 0%, 100%); /*Main heading, stats*/
@@ -18,8 +19,8 @@
     margin: 0%;
 }
 
-body {
-    font-size: 15px;
+html {
+    font-size: 62.5%;
 }
 
 main {
@@ -30,11 +31,46 @@ main {
 }
 
 .stats-component {
-    width: 300px;
+    width: 290px;
     height: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     background-color: var(--dark-desaturate-blue);
     border-radius: 10px;
+}
+
+.stats-img {
+    width: 100%;
+    height: 35%;
+    background-image: url(./assets/image-header-mobile.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.stats-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: var(--soft-violet-transparent);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.stats-content {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+}
+
+.stats-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--white);
+}
+
+.stats-content h1 span {
+    color: var(--soft-violet)
 }
